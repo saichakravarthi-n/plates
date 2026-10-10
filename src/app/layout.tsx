@@ -21,13 +21,13 @@ const hindi = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  title: "Leafora — Food Carrying Leaf Plates | Made in Araku, India",
+  title: "SLSG Enterprise — Food Carrying Leaf Plates | Made in Araku, India",
   description:
-    "Eco-friendly food carrying plates from Araku Valley, Andhra Pradesh. Pattal, thali plates, buffet trays for shaadi, functions, catering and festivals.",
+    "Eco-friendly food carrying plates from Araku Valley, Andhra Pradesh by SLSG Enterprise. Pattal, thali plates, buffet trays for shaadi, functions, catering and festivals.",
   openGraph: {
-    title: "Leafora — Food Carrying Leaf Plates | Made in Araku, India",
+    title: "SLSG Enterprise — Food Carrying Leaf Plates | Made in Araku, India",
     description:
-      "Natural leaf plates from Araku for Indian weddings, buffets, pooja and festivals.",
+      "Natural leaf plates from Araku by SLSG Enterprise for Indian weddings, buffets, pooja and festivals.",
     type: "website",
   },
 };

@@ -53,7 +53,7 @@ export default function Home() {
             href="#top"
             className="font-[family-name:var(--font-display)] text-xl tracking-tight text-sand md:text-2xl"
           >
-            Leafora
+            SLSG Enterprise
           </a>
           <nav className="flex items-center gap-7 text-sm text-sand/90">
             <a
@@ -101,8 +101,8 @@ export default function Home() {
             <p className="animate-rise hindi mb-2 text-lg text-amber md:text-xl">
               भारत में बना · भोजन ले जाने वाली प्लेट्स
             </p>
-            <p className="animate-rise float-soft mb-3 font-[family-name:var(--font-display)] text-6xl leading-[0.9] tracking-tight md:text-8xl lg:text-9xl">
-              Leafora
+            <p className="animate-rise float-soft mb-3 font-[family-name:var(--font-display)] text-5xl leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
+              SLSG Enterprise
             </p>
             <h1 className="animate-rise-delay-1 max-w-2xl font-[family-name:var(--font-display)] text-2xl leading-snug tracking-tight text-sand md:text-4xl">
               Food carrying leaf plates for every Indian feast
@@ -358,10 +358,10 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
               <a
-                href="mailto:hello@leafora.example?subject=Food%20carrying%20plate%20enquiry%20India"
+                href="mailto:hello@slsgenterprise.example?subject=Food%20carrying%20plate%20enquiry%20India"
                 className="btn-primary rounded-full px-7 py-3.5 text-center text-sm font-semibold"
               >
-                Email Leafora
+                Email SLSG Enterprise
               </a>
               <a
                 href="tel:+910000000000"
@@ -377,7 +377,7 @@ export default function Home() {
       <footer className="border-t border-[color:var(--line)] bg-sand/40 px-6 py-8 md:px-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 text-sm text-[color:var(--ink-soft)] sm:flex-row sm:items-center sm:justify-between">
           <p className="font-[family-name:var(--font-display)] text-lg text-ink">
-            Leafora
+            SLSG Enterprise
           </p>
           <p>
             Food carrying leaf plates · Made in Araku, India · Functions &
