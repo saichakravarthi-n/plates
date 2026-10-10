@@ -12,112 +12,100 @@ export type Variety = {
   name: string;
   hindi?: string;
   size: string;
+  metric: string;
   use: string;
   description: string;
   shape: PlateShape;
   tone: string;
+  image: string;
 };
 
 export const varieties: Variety[] = [
   {
-    name: "Round Food Plate",
-    hindi: "गोल प्लेट",
-    size: '8" · 10" · 12"',
-    use: "Full meals & functions",
+    name: "Large Round Food Plate",
+    hindi: "बड़ी गोल प्लेट",
+    size: '≈ 12–14"',
+    metric: "≈ 30–35 cm",
+    use: "Full meals & shaadi functions",
     description:
-      "Strong leaf plates for carrying rice, dal, sabzi and roti — made for shaadi and function catering.",
+      "Wide stitched leaf plate for carrying rice, dal, sabzi and roti at wedding and function catering.",
     shape: "round",
-    tone: "#c4a574",
+    tone: "#6b7a3a",
+    image: "/images/products/round-14in.jpg",
+  },
+  {
+    name: "Medium Round Food Plate",
+    hindi: "मध्यम गोल प्लेट",
+    size: '≈ 11"',
+    metric: "≈ 28 cm",
+    use: "Meals & buffet service",
+    description:
+      "Everyday food-carrying round plate — strong enough for hot Indian meals on the move.",
+    shape: "round",
+    tone: "#5f6e35",
+    image: "/images/products/round-11in.jpg",
   },
   {
     name: "Square Food Plate",
     hindi: "चौकोर प्लेट",
-    size: '6" · 8" · 10"',
-    use: "Modern buffet service",
+    size: '≈ 7–8"',
+    metric: "≈ 18–20 cm",
+    use: "Buffet & modern setups",
     description:
-      "Easy-to-hold square plates for guests moving through buffet lines with hot Indian food.",
+      "Square leaf plate with raised rim — easy to hold through buffet lines with sabzi and snacks.",
     shape: "square",
-    tone: "#b8956a",
+    tone: "#6a7340",
+    image: "/images/products/square-8in.jpg",
   },
   {
-    name: "Thali / Partition Plate",
-    hindi: "थाली प्लेट",
-    size: "3 & 5 section",
-    use: "Thali & combo meals",
+    name: "Deep Leaf Bowl",
+    hindi: "गहरा बाउल",
+    size: '≈ 6"',
+    metric: "≈ 15–16 cm",
+    use: "Curry, rice & sides",
     description:
-      "Separate wells keep curry, rice, pickle and sweets neat while guests carry their plate.",
-    shape: "compartment",
-    tone: "#a67c52",
-  },
-  {
-    name: "Buffet Serving Tray",
-    hindi: "बुफे ट्रे",
-    size: "Large platter",
-    use: "Buffet counters",
-    description:
-      "Wide trays for salad, dessert and live-counter service at big Indian buffets.",
-    shape: "tray",
-    tone: "#c9ad7a",
-  },
-  {
-    name: "Chaat / Snack Boat",
-    hindi: "चटपटा बोट",
-    size: "Snack size",
-    use: "Chaat & starters",
-    description:
-      "Curved boats for pani puri, bhel, fries and starters — light to carry, neat to serve.",
-    shape: "boat",
-    tone: "#d4b896",
-  },
-  {
-    name: "Deep Food Bowl",
-    hindi: "कटोरी",
-    size: "Small · Medium",
-    use: "Curry, raita, sweets",
-    description:
-      "Deep bowls that hold kadhi, raita, payasam and desserts without spilling on the move.",
+      "Deep stitched leaf bowl for kadhi, curry, rice portions and sides without spilling.",
     shape: "bowl",
-    tone: "#b08968",
+    tone: "#7a8a4a",
+    image: "/images/products/bowl-6in.jpg",
   },
   {
-    name: "Oval Serving Platter",
-    hindi: "बड़ा थाल",
-    size: "Sharing size",
-    use: "Family & community",
+    name: "Dona / Snack Bowl",
+    hindi: "दोना कटोरी",
+    size: '≈ 6"',
+    metric: "≈ 15 cm",
+    use: "Prasad, chaat & sweets",
     description:
-      "Long platters for shared biryani, tandoor items and centre-table serving at gatherings.",
-    shape: "oval",
-    tone: "#c2a06e",
-  },
-  {
-    name: "Mini Carry Plate",
-    hindi: "छोटी प्लेट",
-    size: '4" · 6"',
-    use: "Prasad & desserts",
-    description:
-      "Small plates for mithai, prasad, tasting bites and kids’ portions at festivals.",
+      "Classic leaf dona for chaat, prasad, mithai and small serving portions at festivals.",
     shape: "mini",
-    tone: "#d8c4a0",
+    tone: "#80904e",
+    image: "/images/products/dona-6in.jpg",
   },
 ];
 
 export const occasions = [
   {
     title: "Shaadi & Functions",
-    copy: "Food-carrying plates for hundreds of guests — sturdy for full Indian meals, compostable after the feast.",
-    image:
-      "https://images.unsplash.com/photo-1582515073490-39981397c445?auto=format&fit=crop&w=1200&q=80",
+    hindi: "शादी और समारोह",
+    copy: "मंडप से लेकर रिसेप्शन तक — पत्तल प्लेट्स पर पूरा भारतीय भोजन, सैकड़ों मेहमानों के लिए मज़बूत और किफायती।",
+    copyEn:
+      "From mandap to reception — sturdy leaf plates for full Indian meals, ready for hundreds of baraat guests.",
+    image: "/images/occasions/shaadi.jpg",
   },
   {
     title: "Buffet Catering",
-    copy: "From counter to guest hands — trays and plates built for busy Indian buffet lines.",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80",
+    hindi: "बुफे और कैटरिंग",
+    copy: "दाल, सब्ज़ी, बिरयानी और रोटी — बुफे लाइन में मेहमान प्लेट लेकर आसानी से आगे बढ़ें।",
+    copyEn:
+      "Dal, sabzi, biryani and roti — plates that move easily from the catering counter to every guest.",
+    image: "/images/occasions/buffet.jpg",
   },
   {
     title: "Festivals & Pooja",
-    copy: "Prasad, community meals and outdoor feasts — natural plates for Diwali, Navratri and temple functions.",
-    image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80",
+    hindi: "त्योहार और पूजा",
+    copy: "प्रसाद, मिठाई और सामुदायिक भोजन के लिए दोना और प्लेट्स — दिवाली, नवरात्रि और मंदिर उत्सवों के लिए।",
+    copyEn:
+      "Dona bowls and plates for prasad, mithai and community feasts — Diwali, Navratri and temple functions.",
+    image: "/images/occasions/festival.jpg",
   },
 ];
