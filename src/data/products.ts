@@ -1,13 +1,3 @@
-export type PlateShape =
-  | "round"
-  | "square"
-  | "compartment"
-  | "tray"
-  | "boat"
-  | "bowl"
-  | "oval"
-  | "mini";
-
 export type Variety = {
   name: string;
   hindi?: string;
@@ -15,8 +5,14 @@ export type Variety = {
   metric: string;
   use: string;
   description: string;
-  shape: PlateShape;
-  tone: string;
+  image: string;
+};
+
+export type Occasion = {
+  title: string;
+  hindi?: string;
+  copy: string;
+  copyEn?: string;
   image: string;
 };
 
@@ -29,8 +25,6 @@ export const varieties: Variety[] = [
     use: "Full meals & shaadi functions",
     description:
       "Wide stitched leaf plate for carrying rice, dal, sabzi and roti at wedding and function catering.",
-    shape: "round",
-    tone: "#6b7a3a",
     image: "/images/products/round-14in.jpg",
   },
   {
@@ -41,8 +35,6 @@ export const varieties: Variety[] = [
     use: "Meals & buffet service",
     description:
       "Everyday food-carrying round plate — strong enough for hot Indian meals on the move.",
-    shape: "round",
-    tone: "#5f6e35",
     image: "/images/products/round-11in.jpg",
   },
   {
@@ -53,8 +45,6 @@ export const varieties: Variety[] = [
     use: "Buffet & modern setups",
     description:
       "Square leaf plate with raised rim — easy to hold through buffet lines with sabzi and snacks.",
-    shape: "square",
-    tone: "#6a7340",
     image: "/images/products/square-8in.jpg",
   },
   {
@@ -65,8 +55,6 @@ export const varieties: Variety[] = [
     use: "Curry, rice & sides",
     description:
       "Deep stitched leaf bowl for kadhi, curry, rice portions and sides without spilling.",
-    shape: "bowl",
-    tone: "#7a8a4a",
     image: "/images/products/bowl-6in.jpg",
   },
   {
@@ -77,13 +65,11 @@ export const varieties: Variety[] = [
     use: "Prasad, chaat & sweets",
     description:
       "Classic leaf dona for chaat, prasad, mithai and small serving portions at festivals.",
-    shape: "mini",
-    tone: "#80904e",
     image: "/images/products/dona-6in.jpg",
   },
 ];
 
-export const occasions = [
+export const occasions: Occasion[] = [
   {
     title: "Shaadi & Functions",
     hindi: "शादी और समारोह",

@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     "Eco-friendly food carrying plates from Araku Valley, Andhra Pradesh by SLSG Enterprise. Pattal, thali plates, buffet trays for shaadi, functions, catering and festivals.",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/icon-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon.svg?v=4", type: "image/svg+xml" },
+      { url: "/icon-32.png?v=4", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png?v=4", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico?v=4", sizes: "any" },
     ],
-    apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
-    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-icon.png?v=4", type: "image/png", sizes: "180x180" }],
+    shortcut: "/favicon.ico?v=4",
   },
   openGraph: {
     title: "SLSG Enterprise — Food Carrying Leaf Plates | Made in Araku, India",

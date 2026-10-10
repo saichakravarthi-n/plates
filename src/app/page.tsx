@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ImageCarousel } from "@/components/ImageCarousel";
 import { occasions, varieties } from "@/data/products";
 
-const heroImage = "/images/hero-indian-leaf-plates.jpg";
+const heroImage = "/images/hero-main.jpg";
 
 const arakuSlides = [
   {
@@ -99,14 +99,15 @@ export default function Home() {
           <div className="absolute inset-0">
             <Image
               src={heroImage}
-              alt="Indian wedding feast on natural leaf plates"
+              alt="Grand Indian shaadi feast served on leaf plates with marigold and diyas"
               fill
               priority
-              className="hero-media object-cover"
+              className="hero-media object-cover object-[center_40%]"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--moss)] via-[color:var(--moss)]/70 to-[color:var(--moss)]/25" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--moss)]/85 via-[color:var(--moss)]/35 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--moss)] from-15% via-[color:var(--moss)]/55 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[color:var(--moss)]/75 via-[color:var(--moss)]/25 to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_35%,rgba(232,163,23,0.18),transparent_45%)]" />
             <div
               aria-hidden
               className="pulse-ring absolute -right-24 top-24 h-72 w-72 rounded-full border border-amber/35"
@@ -115,18 +116,17 @@ export default function Home() {
 
           <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-6 pb-16 pt-28 md:px-8 md:pb-24">
             <p className="animate-rise hindi mb-2 text-lg text-amber md:text-xl">
-              भारत में बना · भोजन ले जाने वाली प्लेट्स
+              अरकू · भारत · भोजन ले जाने वाली प्लेट्स
             </p>
-            <p className="animate-rise float-soft mb-3 font-[family-name:var(--font-display)] text-5xl leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
+            <p className="animate-rise float-soft mb-3 font-[family-name:var(--font-display)] text-5xl leading-[0.95] tracking-tight drop-shadow-[0_8px_40px_rgba(0,0,0,0.45)] md:text-7xl lg:text-8xl">
               SLSG Enterprise
             </p>
-            <h1 className="animate-rise-delay-1 max-w-2xl font-[family-name:var(--font-display)] text-2xl leading-snug tracking-tight text-sand md:text-4xl">
-              Food carrying leaf plates for every Indian feast
+            <h1 className="animate-rise-delay-1 max-w-2xl font-[family-name:var(--font-display)] text-2xl leading-snug tracking-tight text-sand drop-shadow-md md:text-4xl">
+              Leaf plates that make every Indian feast look grand
             </h1>
-            <p className="animate-rise-delay-2 mt-4 max-w-xl text-base leading-relaxed text-sand/90 md:text-lg">
-              Strong, natural plates to carry full meals — rice, dal, sabzi,
-              sweets — at shaadi functions, buffet catering and festivals across
-              India.
+            <p className="animate-rise-delay-2 mt-4 max-w-xl text-base leading-relaxed text-sand/92 md:text-lg">
+              Natural food-carrying plates for shaadi, buffet catering and
+              festivals — strong for hot Indian meals, beautiful on the table.
             </p>
             <div className="animate-rise-delay-3 mt-9 flex flex-wrap gap-3">
               <a
@@ -137,7 +137,7 @@ export default function Home() {
               </a>
               <a
                 href="#contact"
-                className="btn-ghost rounded-full border border-sand/45 px-7 py-3.5 text-sm font-medium text-sand"
+                className="btn-ghost rounded-full border border-sand/45 px-7 py-3.5 text-sm font-medium text-sand backdrop-blur-sm"
               >
                 Get India pricing
               </a>
@@ -371,37 +371,52 @@ export default function Home() {
 
         <section
           id="contact"
-          className="contact-glow px-6 py-24 text-sand md:px-8 md:py-28"
+          className="contact-glow px-6 py-24 text-sand md:px-8 md:py-32"
         >
-          <div className="mx-auto flex max-w-6xl flex-col gap-12 md:flex-row md:items-end md:justify-between">
-            <div className="max-w-xl">
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber">
-                Order in India
-              </p>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-4xl tracking-tight md:text-6xl">
-                Need food carrying plates for your next event?
-              </h2>
-              <p className="hindi mt-3 text-lg text-amber/90">
-                अपनी अगली पार्टी के लिए ऑर्डर करें
-              </p>
-              <p className="mt-5 text-lg leading-relaxed text-sand/85">
-                Share guest count, plate type and city — we will send bulk
-                pricing for functions and buffet catering.
-              </p>
-            </div>
-            <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="relative mx-auto max-w-3xl text-center">
+            <div
+              aria-hidden
+              className="mx-auto mb-6 h-px w-24 bg-gradient-to-r from-transparent via-amber to-transparent"
+            />
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber">
+              Order in India
+            </p>
+            <h2 className="mt-4 font-[family-name:var(--font-display)] text-4xl tracking-tight md:text-6xl">
+              Need food carrying plates for your next event?
+            </h2>
+            <p className="hindi mt-4 text-2xl text-[color:var(--amber-soft)] md:text-3xl">
+              अपनी अगली पार्टी के लिए ऑर्डर करें
+            </p>
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-sand/85 md:text-lg">
+              Share guest count, plate type and city — we will send bulk pricing
+              for shaadi functions and buffet catering.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center gap-4">
               <a
-                href="mailto:hello@slsgenterprise.example?subject=Food%20carrying%20plate%20enquiry%20India"
-                className="btn-primary rounded-full px-7 py-3.5 text-center text-sm font-semibold"
+                href="tel:+919642321936"
+                className="phone-cta"
+                aria-label="Call SLSG Enterprise at 96423 21936"
               >
-                Email SLSG Enterprise
+                <span className="phone-icon" aria-hidden>
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.6 2.75h2.1c.45 0 .84.3.96.73l1.05 3.7a1 1 0 0 1-.27 1L9.3 9.7a12.3 12.3 0 0 0 5 5l1.52-1.14a1 1 0 0 1 1-.27l3.7 1.05c.43.12.73.51.73.96v2.1a1.75 1.75 0 0 1-1.9 1.75C9.9 18.5 5.5 14.1 4.85 4.65A1.75 1.75 0 0 1 6.6 2.75Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+                <span className="phone-number">96423 21936</span>
               </a>
-              <a
-                href="tel:+910000000000"
-                className="btn-ghost rounded-full border border-sand/40 px-7 py-3.5 text-center text-sm font-medium text-sand"
-              >
-                Call for bulk orders
-              </a>
+              <p className="text-sm text-sand/65">
+                SLSG Enterprise · Araku, India · Bulk orders welcome
+              </p>
             </div>
           </div>
         </section>
