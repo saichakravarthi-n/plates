@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ImageCarousel } from "@/components/ImageCarousel";
 import { occasions, varieties } from "@/data/products";
+import { siteVersion } from "@/lib/version";
 
 const heroImage = "/images/hero-main.jpg";
 
@@ -436,7 +437,7 @@ export default function Home() {
           </p>
           <p>
             Food carrying leaf plates · Made in Araku, India · Functions &
-            buffets
+            buffets · v{siteVersion}
           </p>
         </div>
       </footer>
